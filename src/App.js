@@ -13,6 +13,7 @@ import history from './utils/history';
 import initFontAwesome from './utils/initFontAwesome';
 import Doctors from './components/Doctors';
 import Departments from './components/Departments';
+import BookAppointment from './components/BookAppointment'
 initFontAwesome();
 
 function App() {
@@ -31,8 +32,9 @@ function App() {
 						<Route path="/" exact component={Home} />
 						<PrivateRoute path="/profile" component={Profile} />
 						<Route path="/Doctors" exact component={Doctors} />
-						<Route path="/Departments" exact component={Departments} />	
-						
+						<Route path="/Departments" exact component={Departments} />
+						<Route path="/BookAppointment" exact component={BookAppointment} />
+
 					</Switch>
 				</Container>
 				<Footer />

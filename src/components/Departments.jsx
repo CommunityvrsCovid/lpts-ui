@@ -36,14 +36,14 @@ export default class Departments extends Component {
 						<Col><Button color="warning">Remove Department</Button></Col>
 						<Col></Col>
 					</Row>
-        </Container>
-        
+				</Container>
+
 
 				<Table hover className={"flex-grow-1 mt-2"}>
 					<thead>
 						<tr>
 							<th>#</th>
-              <th>Department Name</th>
+							<th>Department Name</th>
 						</tr>
 					</thead>
 					<tbody>
