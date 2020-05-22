@@ -11,6 +11,8 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import history from './utils/history';
 import initFontAwesome from './utils/initFontAwesome';
+import Doctors from './components/Doctors';
+import Departments from './components/Departments';
 initFontAwesome();
 
 function App() {
@@ -28,6 +30,9 @@ function App() {
 					<Switch>
 						<Route path="/" exact component={Home} />
 						<PrivateRoute path="/profile" component={Profile} />
+						<Route path="/Doctors" exact component={Doctors} />
+						<Route path="/Departments" exact component={Departments} />	
+						
 					</Switch>
 				</Container>
 				<Footer />
